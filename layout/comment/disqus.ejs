@@ -1,0 +1,32 @@
+<% if (has_config('comment.shortname')) { %>
+<p>如果您看不见评论框，八成是因为您还未接入真正意义上自由开放的互联网哟～自己看着办吧～</p>
+<script>
+    var disqus_config = function () {
+        this.page.url = '<%= page.permalink %>';
+        this.page.identifier = '<%= page.disqusId || page.path %>';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + '<%= get_config('comment.shortname') %>' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<script>
+var dsqjs = new DisqusJS({
+    shortname: 'hans362-s-blog',
+    siteName: 'Hans362 's Blog',
+    apikey: 'P4CN9zI6m46TEJY76smRlYYNVzNz2BiuE1I2mj7oyAe4kzQa1R2l1MNdgoG8Nneq',
+    admin: 'hans362',
+});
+</script>
+<% } %>
+<div id="disqus_thread">
+    <% if (!has_config('comment.shortname')) { %>
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    <% } %>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+

@@ -1,0 +1,163 @@
+# Version of the Icarus theme that is currently used
+version: 2.0.0
+# Path or URL to the website's icon
+favicon: https://blog-img-1251828412.file.myqcloud.com/favicon.ico
+# Path or URL to RSS atom.xml
+rss: /atom.xml
+# Path or URL to the website's logo to be shown on the left of the navigation bar or footer
+logo: https://blog-img-1251828412.file.myqcloud.com/banner.jpeg
+# Open Graph metadata (https://hexo.io/docs/helpers.html#open-graph)
+open_graph:
+    # Twitter ID
+    twitter_id: Milk_362
+# Navigation bar link settings
+navbar:
+    # Navigation bar menu links
+    menu:
+        主页: /
+        归档: /archives/
+        咖啡: /coffee/
+        友链: /links/
+        OJ: https://oj.hans362.cn/
+        关于: /about/
+    # Navigation bar links to be shown on the right
+    links:
+        
+# Footer section link settings
+footer:
+    # Links to be shown on the right of the footer section
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+# Article display settings
+article:
+    # Code highlight theme (https://github.com/highlightjs/highlight.js/tree/master/src/styles)
+    highlight: atom-one-dark
+    # Whether to show article thumbnail images
+    thumbnail: true
+    # Whether to show estimate article reading time
+    readtime: true
+# Search plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins)
+search:
+    # Name of the search plugin
+    type: insight
+# Comment plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins)
+comment:
+    # Name of the comment plugin
+    type: disqus
+    shortname: hans362-s-blog
+# Donation entries
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
+donate:
+    -
+        # Donation entry name
+        type: alipay
+        # Qrcode image URL
+        qrcode: https://blog-img-1251828412.file.myqcloud.com/2019/08/06/2532655860.jpg
+    -
+        # Donation entry name
+        type: wechat
+        # Qrcode image URL
+        qrcode: https://blog-img-1251828412.file.myqcloud.com/2019/08/06/2839222710.jpg
+# Share plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins)
+share:
+    # Share plugin name
+    type: 
+# Sidebar settings.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # left sidebar settings
+    left:
+        # Whether the left sidebar is sticky when page scrolls
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+    # right sidebar settings
+    right:
+        # Whether the right sidebar is sticky when page scrolls
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+# Sidebar widget settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/)
+widgets:
+    -
+        type: profile
+        position: left
+        author: Hans362
+        author_title: 不以物喜，不以己悲
+        location: 
+        avatar: https://gravatar.loli.net/avatar/b525f65bbdf95c0152833dadc38fbbb9
+        gravatar: 
+        follow_link: /atom.xml
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'https://github.com/hans362'
+
+            Telegram:
+                icon: fab fa-telegram
+                url: 'https://t.me/hans362'
+            
+            QQ:
+                icon: fab fa-qq
+                url: "javascript:alert('不存在的23333不过如果你通过其他方式联系我或许能PY到～')"
+            
+            Twitter:
+                icon: fab fa-twitter
+                url: 'https://twitter.com/Milk_362'
+            
+            Mail:
+                icon: fas fa-envelope
+                url: 'mailto:i@hans362.cn'
+    -
+        type: toc
+        position: left
+ 
+    -
+        type: category
+        position: left
+
+    -
+        type: recent_posts
+        position: left
+        
+    -
+        type: archive
+        position: left
+
+# Other plugin settings
+plugins:
+    # Enable the lightGallery and Justified Gallery plugins (http://ppoffice.github.io/hexo-theme-icarus/2016/07/08/plugin/Gallery/)
+    gallery: true
+    # Enable the Outdated Browser plugin (http://outdatedbrowser.com/)
+    outdated-browser: true
+    # Enable page animations (http://animejs.com/)
+    animejs: true
+    # Enable the MathJax plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/MathJax/)
+    mathjax: true
+    # Show the back to top button on mobile devices
+    back-to-top: true
+    # Google Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Google-Analytics)
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: UA-116536285-1
+    # Baidu Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Baidu-Analytics)
+    baidu-analytics:
+        # Baidu Analytics tracking id
+        tracking_id: 
+    # Hotjar user feedback plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Hotjar)
+    hotjar:
+        # Hotjar site id
+        site_id: 
+    # Show a loading progress bar at top of the page
+    progressbar: true
+# CDN provider settings
+providers:
+    # Name or URL of the JavaScript and/or stylesheet CDN provider
+    cdn: jsdelivr
+    # Name or URL of the webfont CDN provider
+    fontcdn: 'https://fonts.loli.net/${type}?family=${fontname}'
+    # Name or URL of the webfont Icon CDN provider
+    iconcdn: 'https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.css'
