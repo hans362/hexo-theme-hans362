@@ -18,7 +18,7 @@ navbar:
         归档: /archives/
         咖啡: /coffee/
         友链: /links/
-        OJ: https://oj.hans362.cn/
+        实验室: https://lab.hans362.cn/
         关于: /about/
     # Navigation bar links to be shown on the right
     links:
